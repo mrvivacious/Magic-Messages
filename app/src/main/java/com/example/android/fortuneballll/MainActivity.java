@@ -66,8 +66,6 @@ public class MainActivity extends AppCompatActivity {
             "\"Who we are and where we want to go determine what we do and what we accomplish.\" - Gary W. Keller",
             "\"Embrace hard work by recognizing that the size of the payoff is what really counts, not the " +
                     "length of time it will take to accomplish.\" - Alan Zimmerman"
-
-
     };
 
     TextView mFortuneText;

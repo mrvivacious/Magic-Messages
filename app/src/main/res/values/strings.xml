@@ -2,4 +2,5 @@
     <string name="app_name">Magic</string>
     <string name="action_settings">Settings</string>
     <string name="fortune_description">Touch the magic ball for a magical message!</string>
+    <string name="emailText">Like what you see? Send this message to yourself or a friend!</string>
 </resources>
