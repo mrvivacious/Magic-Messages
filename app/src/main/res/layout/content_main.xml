@@ -55,6 +55,28 @@
         android:layout_alignRight="@+id/fortunateImage"
         android:layout_alignEnd="@+id/fortunateImage" />
 
+    <TextView
+        android:id="@+id/emailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="110dp"
+        android:text="@string/emailText"
+        android:textColor="#969696"
+        android:gravity="center"
+        android:textSize="@dimen/emailText"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:src="@android:drawable/ic_dialog_email"
+        android:layout_marginBottom="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"/>
 
 
 </RelativeLayout>
+
