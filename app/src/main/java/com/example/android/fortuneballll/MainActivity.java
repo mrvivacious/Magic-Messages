@@ -108,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if( !message.equals("none") ){
                     Intent Email = new Intent(Intent.ACTION_SEND);
-                    Email.setType("text/email");
+                    Email.setType("text/plain"); //You can now share the message through multiple sharing apps
                     Email.putExtra(Intent.EXTRA_EMAIL,
                         new String[]{""});  //recipient's email
                     Email.putExtra(Intent.EXTRA_SUBJECT,
