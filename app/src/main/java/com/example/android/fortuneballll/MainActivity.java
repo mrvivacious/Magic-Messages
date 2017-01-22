@@ -1,5 +1,6 @@
 package com.example.android.fortuneballll;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -19,6 +20,7 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
+    String message = "none";
     String fortuneList[] = {
             "The best way to start doing something is to start doing it.",
             "A period of consistent failure does not necessarily mean that success will never be seen.",
@@ -91,11 +93,30 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // 5:
                 int index = new Random().nextInt(fortuneList.length); //*******************
+                message = fortuneList[index];
                 mFortuneText.setText(fortuneList[index]);
                 // 6:
                 YoYo.with(Techniques.Swing)
                         .duration(800)
                         .playOn(mFortuneBallImage);
+            }
+        });
+
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if( !message.equals("none") ){
+                    Intent Email = new Intent(Intent.ACTION_SEND);
+                    Email.setType("text/email");
+                    Email.putExtra(Intent.EXTRA_EMAIL,
+                        new String[]{""});  //recipient's email
+                    Email.putExtra(Intent.EXTRA_SUBJECT,
+                        "A magical message for you!"); // Email 's Subject
+                    Email.putExtra(Intent.EXTRA_TEXT, "I have a magical message for you!\n\n" +
+                        "" + message + "\n\nFrom \"Magical Messages\", an android app.");  //Email 's Greeting text
+                    startActivity(Intent.createChooser(Email, "Share:"));
+                }
             }
         });
     }
