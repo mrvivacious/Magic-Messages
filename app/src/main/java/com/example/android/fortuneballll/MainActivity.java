@@ -21,6 +21,7 @@ import java.util.Random;
 public class MainActivity extends AppCompatActivity {
 
     String message = "none";
+    String noRepeat = "none";
     String fortuneList[] = {
             "The best way to start doing something is to start doing it.",
             "A period of consistent failure does not necessarily mean that success will never be seen.",
@@ -94,6 +95,10 @@ public class MainActivity extends AppCompatActivity {
                 // 5:
                 int index = new Random().nextInt(fortuneList.length); //*******************
                 message = fortuneList[index];
+                while( message.equals(noRepeat)){
+                    message = fortuneList[new Random().nextInt(fortuneList.length)]; //if new message is same as old message, get a different one
+                }
+                noRepeat = message;
                 mFortuneText.setText(fortuneList[index]);
                 // 6:
                 YoYo.with(Techniques.Swing)
