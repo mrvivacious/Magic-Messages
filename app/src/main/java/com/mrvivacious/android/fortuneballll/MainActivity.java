@@ -1,14 +1,12 @@
-package com.example.android.fortuneballll;
+package com.mrvivacious.android.fortuneballll;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.view.Menu;
-import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -36,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
             "Never let a desire grow strong enough that you begin questioning yourself.",
             "Acquired pleasures should only supplement an already joyful life.",
             "Moving can sometimes be better than standing still, but it's always good to be engaged.",
-            "Your life is, after all, only yours. Do something. Do anything. Do.",
+            "Your life is, after all, only yours. Live it in a way you want.",
             "When there are no pending duties or present responsibilities, you become as free " +
                     "as free can be.",
             "Others may be engaging in certain activities. Others may have varying levels of success. " +
@@ -50,25 +48,33 @@ public class MainActivity extends AppCompatActivity {
                     "any outcome becomes fair.",
             "When you have nothing left to do, you can improve yourself, enjoy yourself, or both.",
             "Live in a way that you can respect.",
-            "What are your best interests? Who knows them? Who has them in mind?",
+            "What are your best interests? Who knows them? Who has them in mind? These are the people" +
+                    " you must surround yourself with.",
             "One success is greater and more significant than any number of failures.",
             "One cannot be proficient in everything. Just develop yourself the way you want, with the " +
                     "skills you want.",
             "When you think about something, you dedicate your resources to that something. Would you " +
-                    "rather dedicate your resources to what others are up to, or what you are up to?",
+                    "rather dedicate your resources to meaningless and useless thoughts, or what " +
+                    "motivates and drives you?",
             "When you stop living for yourself, your development stops as well.",
-            "Where are you? Where can you go? What can you do? What can you learn to do?",
+            "Where are you? Where can you go? Where do you want to be?",
             "Acting on emotion is only acting. What you do when you are at peace is what you truly stand for.",
-            "\"If you know what you are doing, you will do what is necessary and stop there.\" - Lao Tzu",
-            "\"Focus is a matter of deciding what things you're not going to do.\" - John Carmack",
-            "\"One half of knowing what you want is knowing what you must give up to get it.\" - Sidney Howard",
-            "\"You can't expect to achieve tomorrow's dreams with yesterday's skills.\" - Alan Zimmerman",
-            "\"Real optimism...has reason to complain but chooses to smile.\" - William Arthur Ward",
-            "\"Persistence is what makes the impossible possible, the possible likely, and the likely " +
-                    "definite.\" - Robert Half",
-            "\"Who we are and where we want to go determine what we do and what we accomplish.\" - Gary W. Keller",
-            "\"Embrace hard work by recognizing that the size of the payoff is what really counts, not the " +
-                    "length of time it will take to accomplish.\" - Alan Zimmerman"
+            "You are a wonderful person.",
+            "You are very beautiful today.",
+            "You should smile more. You have a wonderful smile.",
+            "You are loved.",
+            "People in this world appreciate you, just the way you are.",
+            "Have a wonderful day!",
+            "There are great things in store for you.",
+            "You add value to all the lives you touch.",
+            "You are a lovely and wonderful human being.",
+            "You are a champion.",
+            "You are awesome.",
+            "You inspire many.",
+            "You are a meaningful and special individual.",
+            "Don't forget to smile today, you are beautiful!",
+            "You did a good job today.",
+            "You are a role model and a great friend to someone."
     };
 
     TextView mFortuneText;
@@ -133,18 +139,18 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        // Handle action bar item clicks here. The action bar will
+//        // automatically handle clicks on the Home/Up button, so long
+//        // as you specify a parent activity in AndroidManifest.xml.
+//        int id = item.getItemId();
+//
+//        //noinspection SimplifiableIfStatement
+//        if (id == R.id.action_settings) {
+//            return true;
+//        }
+//
+//        return super.onOptionsItemSelected(item);
+//    }
 }

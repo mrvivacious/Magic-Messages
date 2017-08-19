@@ -1,4 +1,4 @@
-package com.example.android.fortuneballll;
+package com.mrvivacious.android.fortuneballll;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
